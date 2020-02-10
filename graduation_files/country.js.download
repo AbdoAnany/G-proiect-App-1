@@ -1,0 +1,12 @@
+(function () {
+	var country = {'code':'eg','id':40,'defaultLangauge':'ar-eg'};
+	
+	if (!window.evidon) window.evidon = {};
+	
+	if (window.evidon.notice) {
+		window.evidon.notice.setLocation(country);
+	}
+	else {
+		window.evidon.location = country;
+	}
+})();
